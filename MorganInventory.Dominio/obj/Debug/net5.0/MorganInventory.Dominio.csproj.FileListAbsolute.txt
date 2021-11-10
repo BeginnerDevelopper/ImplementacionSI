@@ -1,0 +1,12 @@
+C:\Proyecto1\MorganInventory\MorganInventory.Dominio\obj\Debug\net5.0\MorganInventory.Dominio.csproj.AssemblyReference.cache
+C:\Proyecto1\MorganInventory\MorganInventory.Dominio\obj\Debug\net5.0\MorganInventory.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyecto1\MorganInventory\MorganInventory.Dominio\obj\Debug\net5.0\MorganInventory.Dominio.AssemblyInfoInputs.cache
+C:\Proyecto1\MorganInventory\MorganInventory.Dominio\obj\Debug\net5.0\MorganInventory.Dominio.AssemblyInfo.cs
+C:\Proyecto1\MorganInventory\MorganInventory.Dominio\obj\Debug\net5.0\MorganInventory.Dominio.csproj.CoreCompileInputs.cache
+C:\Proyecto1\MorganInventory\MorganInventory.Dominio\bin\Debug\net5.0\MorganInventory.Dominio.deps.json
+C:\Proyecto1\MorganInventory\MorganInventory.Dominio\bin\Debug\net5.0\MorganInventory.Dominio.dll
+C:\Proyecto1\MorganInventory\MorganInventory.Dominio\bin\Debug\net5.0\ref\MorganInventory.Dominio.dll
+C:\Proyecto1\MorganInventory\MorganInventory.Dominio\bin\Debug\net5.0\MorganInventory.Dominio.pdb
+C:\Proyecto1\MorganInventory\MorganInventory.Dominio\obj\Debug\net5.0\MorganInventory.Dominio.dll
+C:\Proyecto1\MorganInventory\MorganInventory.Dominio\obj\Debug\net5.0\ref\MorganInventory.Dominio.dll
+C:\Proyecto1\MorganInventory\MorganInventory.Dominio\obj\Debug\net5.0\MorganInventory.Dominio.pdb
