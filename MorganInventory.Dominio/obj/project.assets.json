@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\hp\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyecto1\\MorganInventory\\MorganInventory.Dominio\\MorganInventory.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\Public\\Documents\\Analisis y desarrollo de sistemas\\Fase 3\\Luis fernando Net\\ImplementacionSI\\MorganInventory.Dominio\\MorganInventory.Dominio.csproj",
       "projectName": "MorganInventory.Dominio",
-      "projectPath": "C:\\Proyecto1\\MorganInventory\\MorganInventory.Dominio\\MorganInventory.Dominio.csproj",
-      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyecto1\\MorganInventory\\MorganInventory.Dominio\\obj\\",
+      "projectPath": "C:\\Users\\Public\\Documents\\Analisis y desarrollo de sistemas\\Fase 3\\Luis fernando Net\\ImplementacionSI\\MorganInventory.Dominio\\MorganInventory.Dominio.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Public\\Documents\\Analisis y desarrollo de sistemas\\Fase 3\\Luis fernando Net\\ImplementacionSI\\MorganInventory.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

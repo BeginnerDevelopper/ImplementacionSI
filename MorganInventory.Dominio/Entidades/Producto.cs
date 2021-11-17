@@ -10,10 +10,10 @@ namespace MorganInventory.Dominio
     {
         
         public int Id_Producto{get;set;}
-        public int Id_Mercancías{get;set;}
-        public float Precio{get;set;}
-        public int Cantidad{get;set;}
-        public string Estado{get;set;}     
+        public float Preciocompra{get;set;}
+        public float Precioventa{get;set;}
+        public int Cantidad{get;set;} 
+        public DateTime Añadido{get;set;}   
         public Venta Ventas{get;set;}  //Enumeration
         public List<Categoria> Listas{get;set;}
         public Estadoprod Condicion{get;set;}//Enumeration

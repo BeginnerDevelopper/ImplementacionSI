@@ -9,15 +9,16 @@ namespace MorganInventory.Dominio
     public class PedidoVentas
 
     {
-        public int Codigo{get;set;}
-        public DateTime Fechahora {get;set;}
+        public int Id_Pedido{get;set;}
         public string Nombre{get;set;}
-        public int Apellidos{get;set;}
+        public string Apellidos{get;set;}
+        public long Nitcedula{get;set;}
         public int Cantidad{get;set;}
-        public float Valorunitario{get;set;}
+        public double Precioventa{get;set;}
         public string Estado{get;set;}
+        public DateTime Fecha {get;set;}
         public string Descripcion{get;set;}
-        public int Id_Mercancías{get;set;}
+        
         
     }
 }

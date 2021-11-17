@@ -9,10 +9,13 @@ namespace MorganInventory.Dominio
         
       Codigo,
       Cantidad,
+      PrecioUnitario,
+      Total,
       Iva,
       Neto,
-      Notas
-    
+      Cliente,
+      Descripción,  //En descripción va el nombre del producto
+      Fecha,  
 
     }
 }

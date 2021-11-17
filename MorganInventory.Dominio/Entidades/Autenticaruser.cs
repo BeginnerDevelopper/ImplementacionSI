@@ -1,13 +1,14 @@
 using System;
+using System.Collections.Generic;
+namespace MorganInventory.Dominio
 
-namespace MorganInventory.Dominio.Entidades
 {
     /// <sumary>
     ///  Modela una persona en el sistema
     /// </sumary>
-    public class Autenticaruser : Persona
+    public class Autenticaruser
     {
-        public int Id_Autenticaruser {get;set;}
+        public string Id_Autenticaruser {get;set;}
         public string nombreUsuario{get;set;}
         public string contraseña{get;set;}
         

@@ -10,3 +10,15 @@ C:\Proyecto1\MorganInventory\MorganInventory.Dominio\bin\Debug\net5.0\MorganInve
 C:\Proyecto1\MorganInventory\MorganInventory.Dominio\obj\Debug\net5.0\MorganInventory.Dominio.dll
 C:\Proyecto1\MorganInventory\MorganInventory.Dominio\obj\Debug\net5.0\ref\MorganInventory.Dominio.dll
 C:\Proyecto1\MorganInventory\MorganInventory.Dominio\obj\Debug\net5.0\MorganInventory.Dominio.pdb
+C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando Net\ImplementacionSI\MorganInventory.Dominio\bin\Debug\net5.0\MorganInventory.Dominio.deps.json
+C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando Net\ImplementacionSI\MorganInventory.Dominio\bin\Debug\net5.0\MorganInventory.Dominio.dll
+C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando Net\ImplementacionSI\MorganInventory.Dominio\bin\Debug\net5.0\ref\MorganInventory.Dominio.dll
+C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando Net\ImplementacionSI\MorganInventory.Dominio\bin\Debug\net5.0\MorganInventory.Dominio.pdb
+C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando Net\ImplementacionSI\MorganInventory.Dominio\obj\Debug\net5.0\MorganInventory.Dominio.csproj.AssemblyReference.cache
+C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando Net\ImplementacionSI\MorganInventory.Dominio\obj\Debug\net5.0\MorganInventory.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando Net\ImplementacionSI\MorganInventory.Dominio\obj\Debug\net5.0\MorganInventory.Dominio.AssemblyInfoInputs.cache
+C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando Net\ImplementacionSI\MorganInventory.Dominio\obj\Debug\net5.0\MorganInventory.Dominio.AssemblyInfo.cs
+C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando Net\ImplementacionSI\MorganInventory.Dominio\obj\Debug\net5.0\MorganInventory.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando Net\ImplementacionSI\MorganInventory.Dominio\obj\Debug\net5.0\MorganInventory.Dominio.dll
+C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando Net\ImplementacionSI\MorganInventory.Dominio\obj\Debug\net5.0\ref\MorganInventory.Dominio.dll
+C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando Net\ImplementacionSI\MorganInventory.Dominio\obj\Debug\net5.0\MorganInventory.Dominio.pdb
