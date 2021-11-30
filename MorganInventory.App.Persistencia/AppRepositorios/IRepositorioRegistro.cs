@@ -9,8 +9,8 @@ namespace MorganInventory.App.Persistencia
       IEnumerable<Registro> GetAll();
       Registro App(Registro crearcuenta); 
       Registro Update(Registro crearcuenta);
-      void Delete(string Id);
-      Registro Get(string Id);
+      void Delete(string idRegistro);
+      Registro Get(string idRegistro);
   
     }
       

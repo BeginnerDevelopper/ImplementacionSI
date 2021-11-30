@@ -9,7 +9,7 @@ namespace MorganInventory.App.Persistencia
       IEnumerable<Administrador> GetAll(); //Devuelve un valor
       Administrador App(Administrador administrador); 
       Administrador Update(Administrador administrador);
-      void Delete(string Id_Administrador);
-      Administrador Get(string Id_Administrador);
+      void Delete(string idAdministrador);
+      Administrador Get(string idAdministrador);
     }
 }

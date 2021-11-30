@@ -61,20 +61,41 @@ namespace  MorganInventory.App.Persistencia
         }
         public PedidoVentas App(PedidoVentas Pedido)
         {
-          throw new NotImplementedException();
+          Pedido.Id_Pedido=Pedidos.Max(r=>r.Id_Pedido)+1;
+          Pedidos.Add(Pedido);
+          return Pedido;
+          
         }
         public PedidoVentas Update(PedidoVentas Pedido)
         {
-          throw new NotImplementedException();
+          var pedidoEncontrado= Pedidos.SingleOrDefault(p=>p.Id_Pedido == Pedido.Id_Pedido);
+           
+           if(pedidoEncontrado!=null){
+         
+              pedidoEncontrado.Nombre =Pedido.Nombre;
+              pedidoEncontrado.Apellidos =Pedido.Apellidos;
+              pedidoEncontrado.Nitcedula =Pedido.Nitcedula;
+              pedidoEncontrado.Cantidad =Pedido.Cantidad;
+              pedidoEncontrado.Precioventa =Pedido.Precioventa;
+              pedidoEncontrado.Fecha =Pedido.Fecha;
+              pedidoEncontrado.Estado =Pedido.Estado;
+              pedidoEncontrado.Descripcion =Pedido.Descripcion; 
         }
-        public void Delete(int Id_Pedido)
-        {
-          throw new NotImplementedException();
+            return pedidoEncontrado;
         }
 
-      public PedidoVentas Get(int Id_Pedido)
+        public void Delete(int idPedido)
         {
-          throw new NotImplementedException();
+          var Pedido = Pedidos.SingleOrDefault(p => p.Id_Pedido == idPedido);
+          if (Pedido == null)
+                return;
+          Pedidos.Remove(Pedido);
+
+        }
+
+      public PedidoVentas Get(int idPedido)
+        {
+          return Pedidos.SingleOrDefault(p => p.Id_Pedido == idPedido);
         } 
 
       }

@@ -8,8 +8,8 @@ namespace MorganInventory.App.Persistencia
       IEnumerable<Componente> GetAll();
       Componente App(Componente componentes); 
       Componente Update(Componente componentes);
-      void Delete(int Id_Componente);
-      Componente Get(int Id_Componente);
+      void Delete(int idComponente);
+      Componente Get(int idComponente);
   
     }
       

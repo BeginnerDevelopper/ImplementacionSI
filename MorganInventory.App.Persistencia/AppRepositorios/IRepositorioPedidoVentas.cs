@@ -9,7 +9,7 @@ namespace MorganInventory.App.Persistencia
       IEnumerable<PedidoVentas> GetAll();
       PedidoVentas App(PedidoVentas Pedido); 
       PedidoVentas Update(PedidoVentas Pedido);
-      void Delete(int Id_Pedido);
-      PedidoVentas Get(int Id_Pedido);
+      void Delete(int idPedido);
+      PedidoVentas Get(int idPedido);
     }
 }

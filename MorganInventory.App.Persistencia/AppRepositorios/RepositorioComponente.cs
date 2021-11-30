@@ -45,27 +45,44 @@ namespace  MorganInventory.App.Persistencia
 
         }; 
      }
-
+    //FALTA TERMINAR
         public IEnumerable<Componente> GetAll()
         {
           return Componentes;
         }
         public Componente App(Componente componentes)
         {
-          throw new NotImplementedException();
+          componentes.Id_Componente=Componentes.Max(r=>r.Id_Componente)+1;
+          Componentes.Add(componentes);
+          return componentes;
+          
         }
         public Componente Update(Componente componentes)
-        {
-          throw new NotImplementedException();
+        {          
+           var componenteEncontrado = Componentes.SingleOrDefault(p=>p.Id_Componente==componentes.Id_Componente);
+      
+           if(componenteEncontrado!=null){
+           
+              componenteEncontrado.Id_Proveedor = componentes.Id_Proveedor;
+              componenteEncontrado.Descripcion =componentes.Descripcion;
+              componenteEncontrado.Cantidad =componentes.Cantidad;
+              componenteEncontrado.Valorunitario =componentes.Valorunitario;
+              componenteEncontrado.Catalogo = componentes.Catalogo;
+           } 
+            return componenteEncontrado;
         }
-        public void Delete(int Id_Componente)
+        public void Delete(int idComponente)
         {
-          throw new NotImplementedException();
+         var componentes = Componentes.SingleOrDefault(p => p.Id_Componente == idComponente);
+          if (componentes == null)
+                return;
+          Componentes.Remove(componentes);
+ 
         }
 
-      public Componente Get(int Id_Componente)
+      public Componente Get(int idComponente)
         {
-          throw new NotImplementedException();
+          return Componentes.SingleOrDefault(p => p.Id_Componente == idComponente);
         } 
 
       }

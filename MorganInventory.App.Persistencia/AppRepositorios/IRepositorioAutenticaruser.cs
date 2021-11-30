@@ -8,8 +8,8 @@ namespace MorganInventory.App.Persistencia
       IEnumerable<Autenticaruser> GetAll();
       Autenticaruser App(Autenticaruser autenticacion); 
       Autenticaruser Update(Autenticaruser autenticacion);
-      void Delete(string Id_Autenticaruser);
-      Autenticaruser Get(string Id_Autenticaruser);
+      void Delete(string idAutenticaruser);
+      Autenticaruser Get(string idAutenticaruser);
   
     }
       

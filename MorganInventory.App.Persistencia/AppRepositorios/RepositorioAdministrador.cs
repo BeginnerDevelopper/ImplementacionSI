@@ -43,20 +43,38 @@ namespace  MorganInventory.App.Persistencia
         }
         public Administrador App(Administrador administrador)
         {
-          throw new NotImplementedException();
+            administrador.Id=Admin.Max(r=>r.Id)+1;
+            Admin.Add(administrador);
+            return administrador;
+          
         }
         public Administrador Update(Administrador administrador)
         {
-          throw new NotImplementedException();
+           var adminEncontrado = Admin.SingleOrDefault(p => p.Id == administrador.Id);
+           if (adminEncontrado !=null){
+
+             adminEncontrado.Nombres = administrador.Nombres;
+             adminEncontrado.Apellidos = administrador.Apellidos;
+             adminEncontrado.Telefono =administrador.Telefono;
+             adminEncontrado.Email = administrador.Email;
+             adminEncontrado.Direccion = administrador.Direccion;
+             adminEncontrado.Cuidad = administrador.Cuidad;
+
+           }
+           return adminEncontrado;
         }
-        public void Delete(string Id_Administrador)
+        public void Delete(string idAdministrador)
         {
-          throw new NotImplementedException();
+            var administrador = Admin.SingleOrDefault(p => p.Id == idAdministrador);
+          if (administrador == null)
+                return;
+          Admin.Remove(administrador);
+
         }
 
-        public Administrador Get(string Id_Administrador)
+        public Administrador Get(string idAdministrador)
         {
-          throw new NotImplementedException();
+          return Admin.SingleOrDefault(p => p.Id == idAdministrador);
         }
 
     }

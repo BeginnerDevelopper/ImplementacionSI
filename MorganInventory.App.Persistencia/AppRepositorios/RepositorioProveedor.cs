@@ -5,13 +5,13 @@ using MorganInventory.Dominio;
 namespace  MorganInventory.App.Persistencia
 {
     public class RepositorioProveedor : IRepositorioProveedor
-    {List<Proveedor> Prov;
+    {List<Proveedor> Provedores;
 
         public RepositorioProveedor() //constructor
         {
-            Prov = new List<Proveedor>()
+            Provedores = new List<Proveedor>()
             {new Proveedor{
-                Id = "3554k",
+                Id_Proveedor = "3554k",
                 Nombres = "TIENDA ACCESORIOS LA QUINTA ILERA",
                 Apellidos = "",
                 Telefono = 3446550,
@@ -20,7 +20,7 @@ namespace  MorganInventory.App.Persistencia
                 Cuidad = "Bogotá"
             },
              new Proveedor{
-                Id = "1401k",
+                Id_Proveedor = "1401k",
                 Nombres = "Martha Lucia",
                 Apellidos = "Ocampo",
                 Telefono = 3165587414,
@@ -29,7 +29,7 @@ namespace  MorganInventory.App.Persistencia
                 Cuidad = "Pereira"   
              },
              new Proveedor{
-                Id = "3061k",
+                Id_Proveedor = "3061k",
                 Nombres = "Centro de mantenimiento de computo S.A",
                 Apellidos = "",
                 Telefono = 302158794,
@@ -39,7 +39,7 @@ namespace  MorganInventory.App.Persistencia
              },
 
              new Proveedor{
-                Id = "0105k",
+                Id_Proveedor = "0105k",
                 Nombres = "Chalecos al por mayor",
                 Apellidos = "",
                 Telefono = 366594,
@@ -51,23 +51,38 @@ namespace  MorganInventory.App.Persistencia
         }
         public IEnumerable<Proveedor> GetAll() //Almacena información
         {
-            return Prov;
+            return Provedores;
         }
         public Proveedor App(Proveedor proveedor)
         {
-            throw new NotImplementedException();
+            proveedor.Id_Proveedor = Provedores.Max(r=>r.Id_Proveedor)+1;
+            Provedores.Add(proveedor);
+            return proveedor;
         }
         public Proveedor Update(Proveedor proveedor)
         {
-            throw new NotImplementedException();
+            var proveedorEncontrado = Provedores.SingleOrDefault(p => p.Id_Proveedor == proveedor.Id_Proveedor);
+            if (proveedorEncontrado !=null)
+            {
+                proveedorEncontrado.Nombres = proveedor.Nombres;
+                proveedorEncontrado.Apellidos = proveedor.Apellidos;
+                proveedorEncontrado.Telefono = proveedor.Telefono;
+                proveedorEncontrado.Email = proveedor.Email;
+                proveedorEncontrado.Direccion = proveedor.Direccion;
+                proveedorEncontrado.Cuidad = proveedor.Cuidad;
+            }
+                return proveedorEncontrado;
         }
-        public void Delete(string Id_Proveedor)
+        public void Delete(string idProveedor)
         {
-            throw new NotImplementedException();
+            var proveedor = Provedores.SingleOrDefault(p => p.Id_Proveedor == idProveedor);
+            if (proveedor == null)
+                return;
+            Provedores.Remove(proveedor);
         }
-        public Proveedor Get(string Id_Proveedor)
+        public Proveedor Get(string idProveedor)
         {
-            throw new NotImplementedException();
+            return Provedores.SingleOrDefault(p => p.Id_Proveedor == idProveedor);
         }
   
     }   

@@ -55,19 +55,38 @@ namespace  MorganInventory.App.Persistencia
         }
         public Empleado App(Empleado empleado)
         {
-            throw new NotImplementedException();
+            empleado.Id=Empleados.Max(r=>r.Id)+1;
+            Empleados.Add(empleado);
+            return empleado;
+          
+            
         }
         public Empleado Update(Empleado empleado)
         {
-            throw new NotImplementedException();
+          var empleadoEncontrado= Empleados.SingleOrDefault(p=>p.Id == empleado.Id);
+        
+           if(empleadoEncontrado!=null){
+            
+              empleadoEncontrado.Nombres =empleado.Nombres;
+              empleadoEncontrado.Apellidos =empleado.Apellidos;
+              empleadoEncontrado.Telefono=empleado.Telefono;
+              empleadoEncontrado.Email =empleado.Email;
+              empleadoEncontrado.Direccion = empleado.Direccion;
+              empleadoEncontrado.Cuidad = empleado.Cuidad;
+           }
+           return empleadoEncontrado;
         }
-        public void Delete(string Id_Empleado)
+        public void Delete(string idEmpleado)
         {
-            throw new NotImplementedException();
+            var empleado = Empleados.SingleOrDefault(p => p.Id == idEmpleado);
+          if (empleado == null)
+                return;
+          Empleados.Remove(empleado);
+
         }
-        public Empleado Get(string Id_Empleado)
+        public Empleado Get(string idEmpleado)
         {
-            throw new NotImplementedException();
+           return Empleados.SingleOrDefault(p => p.Id == idEmpleado);
         }
   
     }   

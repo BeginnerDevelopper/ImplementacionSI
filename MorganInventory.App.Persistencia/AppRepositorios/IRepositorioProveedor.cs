@@ -8,8 +8,8 @@ namespace MorganInventory.App.Persistencia
       IEnumerable<Proveedor> GetAll();
       Proveedor App(Proveedor proveedor); 
       Proveedor Update(Proveedor proveedor);
-      void Delete(string Id_Proveedor);
-      Proveedor Get(string Id_Proveedor);
+      void Delete(string idProveedor);
+      Proveedor Get(string idProveedor);
   
     }
       

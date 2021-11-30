@@ -8,8 +8,8 @@ namespace MorganInventory.App.Persistencia
       IEnumerable<Empleado> GetAll(); //Devuelve un valor
       Empleado App(Empleado empleado); 
       Empleado Update(Empleado empleado);
-      void Delete(string Id_Empleado);
-      Empleado Get(string Id_Empleado);
+      void Delete(string idEmpleado);
+      Empleado Get(string idEmpleado);
   
     }
       

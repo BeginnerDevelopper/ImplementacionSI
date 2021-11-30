@@ -6,10 +6,10 @@ namespace  MorganInventory.App.Persistencia
 {
 
     public class RepositorioRegistro : IRepositorioRegistro
-     {List<Registro> crear;
+     {List<Registro> crearUsuarios;
         public RepositorioRegistro() 
         {
-            crear = new List<Registro>()
+            crearUsuarios = new List<Registro>()
             {new Registro{
 
                 Id = "1203B",
@@ -68,23 +68,44 @@ namespace  MorganInventory.App.Persistencia
         }
         public IEnumerable<Registro> GetAll()
         {
-            return crear;
+            return crearUsuarios;
         }
         public Registro App(Registro crearcuenta)
         {
-            throw new NotImplementedException();
+          crearcuenta.Id=crearUsuarios.Max(r=>r.Id)+1;
+          crearUsuarios.Add(crearcuenta);
+          return crearcuenta;
+          
         }
         public Registro Update(Registro crearcuenta)
         {
-            throw new NotImplementedException();
+            var usuarioRegistrado = crearUsuarios.SingleOrDefault(p=>p.Id == crearcuenta.Id);
+           
+           if(usuarioRegistrado!=null){
+           
+              usuarioRegistrado.Nombres = crearcuenta.Nombres;
+              usuarioRegistrado.Apellidos = crearcuenta.Apellidos;
+              usuarioRegistrado.Nitcedula = crearcuenta.Nitcedula;
+              usuarioRegistrado.Cargo = crearcuenta.Cargo;  
+              usuarioRegistrado.Telefono = crearcuenta.Telefono;
+              usuarioRegistrado.Email = crearcuenta.Email;
+              usuarioRegistrado.Direccion = crearcuenta.Direccion;
+              usuarioRegistrado.Cuidad = crearcuenta.Cuidad;
+              usuarioRegistrado.Fechanacimiento = crearcuenta.Fechanacimiento;
         }
-        public void Delete(string Id_Registro)
+            return usuarioRegistrado;
+        }
+
+        public void Delete(string idRegistro)
         {
-            throw new NotImplementedException();
+            var crearcuenta = crearUsuarios.SingleOrDefault(p => p.Id == idRegistro);
+            if (crearcuenta == null)
+                return;
+            crearUsuarios.Remove(crearcuenta);
         } 
-        public Registro Get(string Id_Registro)
+        public Registro Get(string idRegistro)
         {
-            throw new NotImplementedException();
+            return crearUsuarios.SingleOrDefault(p => p.Id == idRegistro);
         }
   
     }   

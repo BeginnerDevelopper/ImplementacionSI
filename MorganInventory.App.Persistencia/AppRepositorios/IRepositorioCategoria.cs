@@ -9,7 +9,7 @@ namespace MorganInventory.App.Persistencia
       IEnumerable<Categoria> GetAll(); //Devuelve un valor
       Categoria App(Categoria tipodeproducto); 
       Categoria Update(Categoria tipodeproducto);
-      void Delete(int Codigo);
-      Categoria Get(int Codigo);
+      void Delete(int idCategoria);
+      Categoria Get(int idCategoria);
     }
 }

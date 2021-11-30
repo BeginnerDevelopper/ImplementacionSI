@@ -47,20 +47,36 @@ namespace  MorganInventory.App.Persistencia
         }
         public Producto App(Producto producto)
         {
-          throw new NotImplementedException();
+          producto.Id_Producto=Productos.Max(r=>r.Id_Producto)+1;
+          Productos.Add(producto);
+          return producto;
+          
         }
         public Producto Update(Producto producto)
         {
-          throw new NotImplementedException();
+           var productoEncontrado= Productos.SingleOrDefault(p=>p.Id_Producto==producto.Id_Producto);
+           //single or default devuelve un valor de un producto
+           if(productoEncontrado!=null){
+             //estos datos provienen y deben coincidir con la entidad o una entidad de la cual se ha heredado.
+              productoEncontrado.Preciocompra =producto.Preciocompra;
+              productoEncontrado.Precioventa =producto.Precioventa;
+              productoEncontrado.Cantidad =producto.Cantidad;
+              productoEncontrado.Añadido =producto.Añadido;
+           }
+           return productoEncontrado;
         }
-        public void Delete(int Id_Producto)
+        public void Delete(int idProducto)
         {
-          throw new NotImplementedException();
+          var producto = Productos.SingleOrDefault(p => p.Id_Producto == idProducto);
+          if (producto == null)
+                return;
+          Productos.Remove(producto);
+
         }
 
-      public Producto Get(int Id_Producto)
+      public Producto Get(int idProducto)
         {
-          throw new NotImplementedException();
+          return Productos.SingleOrDefault(p => p.Id_Producto == idProducto);
         } 
 
       }

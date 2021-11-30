@@ -47,19 +47,36 @@ namespace  MorganInventory.App.Persistencia
         }
         public Factura App(Factura factura)
         {
-            throw new NotImplementedException();
+            factura.NumFactura = resumen.Max(r => r.NumFactura)+1;
+            resumen.Add(factura);
+            return factura;
         }
         public Factura Update(Factura factura)
         {
-            throw new NotImplementedException();
+            var facturaEncontrada = resumen.SingleOrDefault(p=>p.NumFactura==factura.NumFactura);
+           
+           if(facturaEncontrada!=null){
+
+              facturaEncontrada.Cliente = factura.Cliente;
+              facturaEncontrada.Vendedor = factura.Vendedor;
+              facturaEncontrada.Fechahora = factura.Fechahora;
+              facturaEncontrada.Neto = factura.Neto;
+              facturaEncontrada.Iva = factura.Iva;
+              facturaEncontrada.Total = factura.Total;
+
+           }
+            return facturaEncontrada;
         }
-        public void Delete(int NumFactura)
+        public void Delete(int idFactura)
         {
-            throw new NotImplementedException();
+            var factura = resumen.SingleOrDefault(p => p.NumFactura == idFactura);
+            if (factura == null)
+                    return;
+            resumen.Remove(factura);
         }
-        public Factura Get(int NumFactura)
+        public Factura Get(int idFactura)
         {
-            throw new NotImplementedException();
+           return resumen.SingleOrDefault(p => p.NumFactura == idFactura);
         }
   
     }   

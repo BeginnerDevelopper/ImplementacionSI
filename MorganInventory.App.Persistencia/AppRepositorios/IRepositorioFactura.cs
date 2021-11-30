@@ -9,7 +9,7 @@ namespace MorganInventory.App.Persistencia
       IEnumerable<Factura> GetAll();
       Factura App(Factura factura); 
       Factura Update(Factura factura);
-      void Delete(int NumFactura);
-      Factura Get(int NumFactura);
+      void Delete(int idFactura);
+      Factura Get(int idFactura);
     }
 }

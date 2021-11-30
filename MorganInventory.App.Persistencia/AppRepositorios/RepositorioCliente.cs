@@ -68,19 +68,40 @@ namespace  MorganInventory.App.Persistencia
         }
         public Cliente App(Cliente clientes)
         {
-            throw new NotImplementedException();
+            clientes.Id=Clientes.Max(r=>r.Id)+1;
+            Clientes.Add(clientes);
+            return clientes;
+          
         }
         public Cliente Update(Cliente clientes)
         {
-            throw new NotImplementedException();
+            
+          var clienteEncontrado= Clientes.SingleOrDefault(p=>p.Id==clientes.Id);
+    
+           if(clienteEncontrado!=null){
+     
+              clienteEncontrado.Nombres =clientes.Nombres;
+              clienteEncontrado.Apellidos =clientes.Apellidos;
+              clienteEncontrado.Telefono =clientes.Telefono;
+              clienteEncontrado.Email =clientes.Email;
+              clienteEncontrado.Direccion = clientes.Direccion;
+              clienteEncontrado.Cuidad =clientes.Cuidad;
+                 
+           }
+            return clienteEncontrado;
         }
-        public void Delete(string Id_Cliente)
+    
+        public void Delete(string idCliente)
         {
-            throw new NotImplementedException();
+            var clientes = Clientes.SingleOrDefault(p => p.Id == idCliente);
+          if (clientes == null)
+                return;
+          Clientes.Remove(clientes);
+
         }
-        public Cliente Get(string Id_Cliente)
+        public Cliente Get(string idCliente)
         {
-            throw new NotImplementedException();
+            return Clientes.SingleOrDefault(p => p.Id == idCliente);
         }
   
     }   

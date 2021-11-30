@@ -9,7 +9,7 @@ namespace MorganInventory.App.Persistencia
       IEnumerable<Producto> GetAll(); //Devuelve un valor
       Producto App(Producto producto); //App muestra la lista de los productos
       Producto Update(Producto producto);
-      void Delete(int Id_Producto);
-      Producto Get(int Id_Producto);
+      void Delete(int idProducto);
+      Producto Get(int idProducto);
     }
 }

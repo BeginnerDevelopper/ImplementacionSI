@@ -44,19 +44,30 @@ namespace  MorganInventory.App.Persistencia
         }
         public Autenticaruser App(Autenticaruser autenticacion)
         {
-            throw new NotImplementedException();
+            autenticacion.Id_Autenticaruser = Usuario.Max(r => r.Id_Autenticaruser)+1;
+            Usuario.Add(autenticacion);
+            return autenticacion;
         }
         public Autenticaruser Update(Autenticaruser autenticacion)
         {
-            throw new NotImplementedException();
+            var autenUser = Usuario.SingleOrDefault(p => p.Id_Autenticaruser == autenticacion.Id_Autenticaruser);
+            if (autenUser!=null)
+            {
+                autenUser.nombreUsuario = autenticacion.nombreUsuario;
+                autenUser.contraseña = autenticacion.contraseña;
+            }
+              return autenUser;
         }
-        public void Delete(string Id_Autenticaruser)
+        public void Delete(string idAutenticaruser)
         {
-            throw new NotImplementedException();
+            var autenticacion = Usuario.SingleOrDefault(p => p.Id_Autenticaruser == idAutenticaruser); 
+            if (autenticacion == null)
+                return;
+            Usuario.Remove(autenticacion);
         }
-        public Autenticaruser Get(string Id_Autenticaruser)
+        public Autenticaruser Get(string idAutenticaruser)
         {
-            throw new NotImplementedException();
+            return Usuario.SingleOrDefault(p => p.Id_Autenticaruser == idAutenticaruser);  
         }
   
     }   
