@@ -1,0 +1,178 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.App.Presentacion\\MorganInventory.App.Presentacion.csproj": {}
+  },
+  "projects": {
+    "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.App.Persistencia\\MorganInventory.App.Persistencia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.App.Persistencia\\MorganInventory.App.Persistencia.csproj",
+        "projectName": "MorganInventory.App.Persistencia",
+        "projectPath": "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.App.Persistencia\\MorganInventory.App.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.App.Persistencia\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.Dominio\\MorganInventory.Dominio.csproj": {
+                "projectPath": "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.Dominio\\MorganInventory.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.App.Presentacion\\MorganInventory.App.Presentacion.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.App.Presentacion\\MorganInventory.App.Presentacion.csproj",
+        "projectName": "MorganInventory.App.Presentacion",
+        "projectPath": "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.App.Presentacion\\MorganInventory.App.Presentacion.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.App.Presentacion\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.App.Persistencia\\MorganInventory.App.Persistencia.csproj": {
+                "projectPath": "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.App.Persistencia\\MorganInventory.App.Persistencia.csproj"
+              },
+              "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.Dominio\\MorganInventory.Dominio.csproj": {
+                "projectPath": "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.Dominio\\MorganInventory.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.Dominio\\MorganInventory.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.Dominio\\MorganInventory.Dominio.csproj",
+        "projectName": "MorganInventory.Dominio",
+        "projectPath": "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.Dominio\\MorganInventory.Dominio.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto1\\ImplementacionSI\\MorganInventory.Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
