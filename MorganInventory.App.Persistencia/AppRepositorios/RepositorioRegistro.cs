@@ -21,7 +21,8 @@ namespace  MorganInventory.App.Persistencia
                 Cuidad = "Pereira",
                 Nitcedula = 4590014,
                 Cargo = "Asistente de ventas y Cajera",
-                Fechanacimiento = new DateTime(1982/12/05) 
+                Fechanacimiento = new DateTime(1982/12/05) ,
+                contraseña =""
             },
 
             new Registro{
@@ -35,8 +36,8 @@ namespace  MorganInventory.App.Persistencia
                 Cuidad = "Pereira",
                 Nitcedula = 4780000,
                 Cargo = "Gerente",
-                Fechanacimiento = new DateTime(1989/24/08) 
-
+                Fechanacimiento = new DateTime(1989/24/08),
+                contraseña =""
             },    
             new Registro{
                 Id = "1205B",
@@ -48,7 +49,8 @@ namespace  MorganInventory.App.Persistencia
                 Cuidad = "Pereira",   
                 Nitcedula = 725080,
                 Cargo = "Asistente de ventas",
-                Fechanacimiento = new DateTime(1979/12/12)   
+                Fechanacimiento = new DateTime(1979/12/12), 
+                contraseña ="",  
              },
              new Registro{
                 Id = "1206B",
@@ -60,7 +62,8 @@ namespace  MorganInventory.App.Persistencia
                 Cuidad = "Pereira",
                 Nitcedula = 1005795050, 
                 Cargo = "Cajero",
-                Fechanacimiento = new DateTime(2002/05/02) 
+                Fechanacimiento = new DateTime(2002/05/02),
+                contraseña ="" 
              }
     
 
