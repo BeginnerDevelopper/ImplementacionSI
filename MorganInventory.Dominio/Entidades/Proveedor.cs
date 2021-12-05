@@ -10,7 +10,7 @@ namespace MorganInventory.Dominio
     {
         public string Id_Proveedor{get;set;}
         public string Lineadeproductos{get;set;}
-        public List<Componente> Abastece{get;set;}
+        
         
     }
 }

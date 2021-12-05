@@ -12,3 +12,4 @@ C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando
 C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando Net\ImplementacionSI\MorganInventory.App.Persistencia\obj\Debug\net5.0\MorganInventory.App.Persistencia.dll
 C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando Net\ImplementacionSI\MorganInventory.App.Persistencia\obj\Debug\net5.0\ref\MorganInventory.App.Persistencia.dll
 C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando Net\ImplementacionSI\MorganInventory.App.Persistencia\obj\Debug\net5.0\MorganInventory.App.Persistencia.pdb
+C:\Users\Public\Documents\Analisis y desarrollo de sistemas\Fase 3\Luis fernando Net\ImplementacionSI\MorganInventory.App.Persistencia\obj\Debug\net5.0\MorganInventory.App.Persistencia.csproj.CopyComplete
