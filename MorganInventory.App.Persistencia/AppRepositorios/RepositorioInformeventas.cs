@@ -23,7 +23,7 @@ namespace  MorganInventory.App.Persistencia
              new Informeventas{
 
                 Id_Venta = 2002,
-                Cliente  = "Luis Angel",
+                Cliente  = "Camila cabello",
                 Fecha = new DateTime(2021,11,10),
                 Vendedor = "Jessica Arias",
                 Neto = 350.000F,
@@ -35,7 +35,7 @@ namespace  MorganInventory.App.Persistencia
              new Informeventas{
 
                 Id_Venta = 2002,
-                Cliente  = "Luis Angel",
+                Cliente  = "Fray Angel",
                 Fecha = new DateTime(2021,11,10),
                 Vendedor = "Jessica Arias",
                 Neto = 350.000F,
